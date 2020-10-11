@@ -40,7 +40,7 @@ describe('Friends List', () => {
   });
 
   it('announces friendship', () => {
-    friendsList.announceFriendship = jest.fn(); // JEST Moc Function
+    friendsList.announceFriendship = jest.fn(); // JEST Mock Function
 
     expect(friendsList.announceFriendship).not.toHaveBeenCalled();
     friendsList.addFriend('Michel');
